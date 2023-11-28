@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Criar uma nova Aula</h1>
+<div mat-dialog-content>
+
+  <mat-form-field>
+    <mat-label>Digite sua Aula</mat-label>
+    <textarea matInput [formControl]="aula" required></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button>Cancelar</button>
+  <button mat-button cdkFocusInitial (click)="criarNovaAula();">Ok</button>
+</div>
